@@ -8,7 +8,8 @@ module.exports = {
             , md: '768px'
             , lg: '1024px'
             , xl: '1280px'
-        , }
+            ,
+        }
         , colors: {
             transparent: 'transparent',
 
@@ -25,7 +26,9 @@ module.exports = {
                 , 700: '#4a5568'
                 , 800: '#2d3748'
                 , 900: '#1a202c'
-            , }
+                , custom: '#F5F5F5'
+                ,
+            }
             , red: {
                 100: '#fff5f5'
                 , 200: '#fed7d7'
@@ -36,7 +39,8 @@ module.exports = {
                 , 700: '#c53030'
                 , 800: '#9b2c2c'
                 , 900: '#742a2a'
-            , }
+                ,
+            }
             , orange: {
                 100: '#fffaf0'
                 , 200: '#feebc8'
@@ -47,7 +51,8 @@ module.exports = {
                 , 700: '#c05621'
                 , 800: '#9c4221'
                 , 900: '#7b341e'
-            , }
+                ,
+            }
             , yellow: {
                 100: '#fffff0'
                 , 200: '#fefcbf'
@@ -58,7 +63,8 @@ module.exports = {
                 , 700: '#b7791f'
                 , 800: '#975a16'
                 , 900: '#744210'
-            , }
+                ,
+            }
             , green: {
                 100: '#f0fff4'
                 , 200: '#c6f6d5'
@@ -69,7 +75,9 @@ module.exports = {
                 , 700: '#2f855a'
                 , 800: '#276749'
                 , 900: '#22543d'
-            , }
+                , button: '#88D65C'
+                ,
+            }
             , teal: {
                 100: '#e6fffa'
                 , 200: '#b2f5ea'
@@ -80,7 +88,8 @@ module.exports = {
                 , 700: '#2c7a7b'
                 , 800: '#285e61'
                 , 900: '#234e52'
-            , }
+                ,
+            }
             , blue: {
                 100: '#ebf8ff'
                 , 200: '#bee3f8'
@@ -91,7 +100,9 @@ module.exports = {
                 , 700: '#2b6cb0'
                 , 800: '#2c5282'
                 , 900: '#2a4365'
-            , }
+                , custom: '#000D44'
+                ,
+            }
             , indigo: {
                 100: '#ebf4ff'
                 , 200: '#c3dafe'
@@ -102,7 +113,8 @@ module.exports = {
                 , 700: '#4c51bf'
                 , 800: '#434190'
                 , 900: '#3c366b'
-            , }
+                ,
+            }
             , purple: {
                 100: '#faf5ff'
                 , 200: '#e9d8fd'
@@ -113,7 +125,8 @@ module.exports = {
                 , 700: '#6b46c1'
                 , 800: '#553c9a'
                 , 900: '#44337a'
-            , }
+                ,
+            }
             , pink: {
                 100: '#fff5f7'
                 , 200: '#fed7e2'
@@ -124,8 +137,13 @@ module.exports = {
                 , 700: '#b83280'
                 , 800: '#97266d'
                 , 900: '#702459'
-            , }
-        , }
+                ,
+            }
+            ,
+            tapblue: '#1D42B1'
+            ,
+            tapgreen: '#88D65C'
+        }
         , spacing: {
             px: '1px'
             , '0': '0'
@@ -146,9 +164,11 @@ module.exports = {
             , '48': '12rem'
             , '56': '14rem'
             , '64': '16rem'
+            , '72': '20rem'
             , '128': '32rem'
-        , }
-        , backgroundColor: theme => theme( 'colors' )
+            , '256': '34rem'
+        }
+        , backgroundColor: theme => theme('colors')
         , backgroundPosition: {
             bottom: 'bottom'
             , center: 'center'
@@ -159,30 +179,35 @@ module.exports = {
             , 'right-bottom': 'right bottom'
             , 'right-top': 'right top'
             , top: 'top'
-        , }
+            ,
+        }
         , backgroundSize: {
             auto: 'auto'
             , cover: 'cover'
             , contain: 'contain'
-        , }
-        , borderColor: theme => ( {
-            ...theme( 'colors' )
-            , default: theme( 'colors.gray.300', 'currentColor' )
-        , } )
+            ,
+        }
+        , borderColor: theme => ({
+            ...theme('colors')
+            , default: theme('colors.gray.300', 'currentColor')
+            ,
+        })
         , borderRadius: {
             none: '0'
             , sm: '0.125rem'
             , default: '0.25rem'
             , lg: '0.5rem'
             , full: '9999px'
-        , }
+            ,
+        }
         , borderWidth: {
             default: '1px'
             , '0': '0'
             , '2': '2px'
             , '4': '4px'
             , '8': '8px'
-        , }
+            ,
+        }
         , boxShadow: {
             default: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'
             , md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'
@@ -192,7 +217,8 @@ module.exports = {
             , inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)'
             , outline: '0 0 0 3px rgba(66, 153, 225, 0.5)'
             , none: 'none'
-        , }
+            ,
+        }
         , container: {}
         , cursor: {
             auto: 'auto'
@@ -202,59 +228,65 @@ module.exports = {
             , text: 'text'
             , move: 'move'
             , 'not-allowed': 'not-allowed'
-        , }
+            ,
+        }
         , fill: {
             current: 'currentColor'
-        , }
+            ,
+        }
         , flex: {
             '1': '1 1 0%'
             , auto: '1 1 auto'
             , initial: '0 1 auto'
             , none: 'none'
-        , }
+            ,
+        }
         , flexGrow: {
             '0': '0'
             , default: '1'
-        , }
+            ,
+        }
         , flexShrink: {
             '0': '0'
             , default: '1'
-        , }
+            ,
+        }
         , fontFamily: {
             sans: [
-        'Montserrat'
-        , '-apple-system'
-        , 'BlinkMacSystemFont'
-        , '"Segoe UI"'
-        , 'Roboto'
-        , '"Helvetica Neue"'
-        , 'Arial'
-        , '"Noto Sans"'
-        , 'sans-serif'
-        , '"Apple Color Emoji"'
-        , '"Segoe UI Emoji"'
-        , '"Segoe UI Symbol"'
-        , '"Noto Color Emoji"'
-      ,]
+                'Montserrat'
+                , '-apple-system'
+                , 'BlinkMacSystemFont'
+                , '"Segoe UI"'
+                , 'Roboto'
+                , '"Helvetica Neue"'
+                , 'Arial'
+                , '"Noto Sans"'
+                , 'sans-serif'
+                , '"Apple Color Emoji"'
+                , '"Segoe UI Emoji"'
+                , '"Segoe UI Symbol"'
+                , '"Noto Color Emoji"'
+                ,]
             , serif: [
-        'Georgia'
-        , 'Cambria'
-        , '"Times New Roman"'
-        , 'Times'
-        , 'serif'
-      , ]
+                'Georgia'
+                , 'Cambria'
+                , '"Times New Roman"'
+                , 'Times'
+                , 'serif'
+                ,]
             , mono: [
-        'Menlo'
-        , 'Monaco'
-        , 'Consolas'
-        , '"Liberation Mono"'
-        , '"Courier New"'
-        , 'monospace'
-      , ]
-      ,play: [
-        'Playfair Display',
-      ]
-        , }
+                'Menlo'
+                , 'Monaco'
+                , 'Consolas'
+                , '"Liberation Mono"'
+                , '"Courier New"'
+                , 'monospace'
+                ,]
+            , play: [
+                'Playfair Display',
+            ]
+            ,
+        }
         , fontSize: {
             xs: '0.75rem'
             , sm: '0.875rem'
@@ -267,7 +299,8 @@ module.exports = {
             , '5xl': '3rem'
             , '6xl': '4rem'
             , '7xl': '7.5rem'
-        , }
+            ,
+        }
         , fontWeight: {
             hairline: '100'
             , thin: '200'
@@ -278,17 +311,23 @@ module.exports = {
             , bold: '700'
             , extrabold: '800'
             , black: '900'
-        , }
-        , height: theme => ( {
+            ,
+        }
+        , height: theme => ({
             auto: 'auto'
-            , ...theme( 'spacing' )
+            , ...theme('spacing')
             , full: '100%'
             , screen: '100vh'
-        , } )
+            , custom: '70vh'
+            , custom2: '80vh'
+            , grande: '120vh'
+            ,
+        })
         , inset: {
             '0': '0'
             , auto: 'auto'
-        , }
+            ,
+        }
         , letterSpacing: {
             tighter: '-0.05em'
             , tight: '-0.025em'
@@ -296,7 +335,10 @@ module.exports = {
             , wide: '0.025em'
             , wider: '0.05em'
             , widest: '0.1em'
-        , }
+            , extrawidest: '0.2rem'
+            , icons: '2rem'
+            ,
+        }
         , lineHeight: {
             none: '1'
             , tight: '1.25'
@@ -304,21 +346,25 @@ module.exports = {
             , normal: '1.5'
             , relaxed: '1.625'
             , loose: '2'
-        , }
+            ,
+        }
         , listStyleType: {
             none: 'none'
             , disc: 'disc'
             , decimal: 'decimal'
-        , }
-        , margin: ( theme, { negative } ) => ( {
+            ,
+        }
+        , margin: (theme, { negative }) => ({
             auto: 'auto'
-            , ...theme( 'spacing' )
-            , ...negative( theme( 'spacing' ) )
-        , } )
+            , ...theme('spacing')
+            , ...negative(theme('spacing'))
+            ,
+        })
         , maxHeight: {
             full: '100%'
             , screen: '100vh'
-        , }
+            ,
+        }
         , maxWidth: {
             xs: '20rem'
             , sm: '24rem'
@@ -331,16 +377,19 @@ module.exports = {
             , '5xl': '64rem'
             , '6xl': '72rem'
             , full: '100%'
-        , }
+            ,
+        }
         , minHeight: {
             '0': '0'
             , full: '100%'
             , screen: '100vh'
-        , }
+            ,
+        }
         , minWidth: {
             '0': '0'
             , full: '100%'
-        , }
+            ,
+        }
         , objectPosition: {
             bottom: 'bottom'
             , center: 'center'
@@ -351,14 +400,16 @@ module.exports = {
             , 'right-bottom': 'right bottom'
             , 'right-top': 'right top'
             , top: 'top'
-        , }
+            ,
+        }
         , opacity: {
             '0': '0'
             , '25': '0.25'
             , '50': '0.5'
             , '75': '0.75'
             , '100': '1'
-        , }
+            ,
+        }
         , order: {
             first: '-9999'
             , last: '9999'
@@ -375,15 +426,17 @@ module.exports = {
             , '10': '10'
             , '11': '11'
             , '12': '12'
-        , }
-        , padding: theme => theme( 'spacing' )
+            ,
+        }
+        , padding: theme => theme('spacing')
         , stroke: {
             current: 'currentColor'
-        , }
-        , textColor: theme => theme( 'colors' )
-        , width: theme => ( {
+            ,
+        }
+        , textColor: theme => theme('colors')
+        , width: theme => ({
             auto: 'auto'
-            , ...theme( 'spacing' )
+            , ...theme('spacing')
             , '1/2': '50%'
             , '1/3': '33.333333%'
             , '2/3': '66.666667%'
@@ -412,7 +465,8 @@ module.exports = {
             , '11/12': '91.666667%'
             , full: '100%'
             , screen: '100vw'
-        , } )
+            ,
+        })
         , zIndex: {
             auto: 'auto'
             , '0': '0'
@@ -421,74 +475,78 @@ module.exports = {
             , '30': '30'
             , '40': '40'
             , '50': '50'
-        , }
-    , }
+            ,
+        }
+        ,
+    }
     , variants: {
-        alignContent: [ 'responsive' ]
-        , alignItems: [ 'responsive' ]
-        , alignSelf: [ 'responsive' ]
-        , appearance: [ 'responsive' ]
-        , backgroundAttachment: [ 'responsive' ]
-        , backgroundColor: [ 'responsive', 'hover', 'focus' ]
-        , backgroundPosition: [ 'responsive' ]
-        , backgroundRepeat: [ 'responsive' ]
-        , backgroundSize: [ 'responsive' ]
-        , borderCollapse: [ 'responsive' ]
-        , borderColor: [ 'responsive', 'hover', 'focus' ]
-        , borderRadius: [ 'responsive' ]
-        , borderStyle: [ 'responsive' ]
-        , borderWidth: [ 'responsive' ]
-        , boxShadow: [ 'responsive', 'hover', 'focus' ]
-        , cursor: [ 'responsive' ]
-        , display: [ 'responsive' ]
-        , fill: [ 'responsive' ]
-        , flex: [ 'responsive' ]
-        , flexDirection: [ 'responsive' ]
-        , flexGrow: [ 'responsive' ]
-        , flexShrink: [ 'responsive' ]
-        , flexWrap: [ 'responsive' ]
-        , float: [ 'responsive' ]
-        , fontFamily: [ 'responsive' ]
-        , fontSize: [ 'responsive' ]
-        , fontSmoothing: [ 'responsive' ]
-        , fontStyle: [ 'responsive' ]
-        , fontWeight: [ 'responsive', 'hover', 'focus' ]
-        , height: [ 'responsive' ]
-        , inset: [ 'responsive' ]
-        , justifyContent: [ 'responsive' ]
-        , letterSpacing: [ 'responsive' ]
-        , lineHeight: [ 'responsive' ]
-        , listStylePosition: [ 'responsive' ]
-        , listStyleType: [ 'responsive' ]
-        , margin: [ 'responsive' ]
-        , maxHeight: [ 'responsive' ]
-        , maxWidth: [ 'responsive' ]
-        , minHeight: [ 'responsive' ]
-        , minWidth: [ 'responsive' ]
-        , objectFit: [ 'responsive' ]
-        , objectPosition: [ 'responsive' ]
-        , opacity: [ 'responsive' ]
-        , order: [ 'responsive' ]
-        , outline: [ 'responsive', 'focus' ]
-        , overflow: [ 'responsive' ]
-        , padding: [ 'responsive' ]
-        , pointerEvents: [ 'responsive' ]
-        , position: [ 'responsive' ]
-        , resize: [ 'responsive' ]
-        , stroke: [ 'responsive' ]
-        , tableLayout: [ 'responsive' ]
-        , textAlign: [ 'responsive' ]
-        , textColor: [ 'responsive', 'hover', 'focus' ]
-        , textDecoration: [ 'responsive', 'hover', 'focus' ]
-        , textTransform: [ 'responsive' ]
-        , userSelect: [ 'responsive' ]
-        , verticalAlign: [ 'responsive' ]
-        , visibility: [ 'responsive' ]
-        , whitespace: [ 'responsive' ]
-        , width: [ 'responsive' ]
-        , wordBreak: [ 'responsive' ]
-        , zIndex: [ 'responsive' ]
-    , }
+        alignContent: ['responsive']
+        , alignItems: ['responsive']
+        , alignSelf: ['responsive']
+        , appearance: ['responsive']
+        , backgroundAttachment: ['responsive']
+        , backgroundColor: ['responsive', 'hover', 'focus']
+        , backgroundPosition: ['responsive']
+        , backgroundRepeat: ['responsive']
+        , backgroundSize: ['responsive']
+        , borderCollapse: ['responsive']
+        , borderColor: ['responsive', 'hover', 'focus']
+        , borderRadius: ['responsive']
+        , borderStyle: ['responsive']
+        , borderWidth: ['responsive']
+        , boxShadow: ['responsive', 'hover', 'focus']
+        , cursor: ['responsive']
+        , display: ['responsive']
+        , fill: ['responsive']
+        , flex: ['responsive']
+        , flexDirection: ['responsive']
+        , flexGrow: ['responsive']
+        , flexShrink: ['responsive']
+        , flexWrap: ['responsive']
+        , float: ['responsive']
+        , fontFamily: ['responsive']
+        , fontSize: ['responsive']
+        , fontSmoothing: ['responsive']
+        , fontStyle: ['responsive']
+        , fontWeight: ['responsive', 'hover', 'focus']
+        , height: ['responsive']
+        , inset: ['responsive']
+        , justifyContent: ['responsive']
+        , letterSpacing: ['responsive']
+        , lineHeight: ['responsive']
+        , listStylePosition: ['responsive']
+        , listStyleType: ['responsive']
+        , margin: ['responsive']
+        , maxHeight: ['responsive']
+        , maxWidth: ['responsive']
+        , minHeight: ['responsive']
+        , minWidth: ['responsive']
+        , objectFit: ['responsive']
+        , objectPosition: ['responsive']
+        , opacity: ['responsive']
+        , order: ['responsive']
+        , outline: ['responsive', 'focus']
+        , overflow: ['responsive']
+        , padding: ['responsive']
+        , pointerEvents: ['responsive']
+        , position: ['responsive']
+        , resize: ['responsive']
+        , stroke: ['responsive']
+        , tableLayout: ['responsive']
+        , textAlign: ['responsive']
+        , textColor: ['responsive', 'hover', 'focus']
+        , textDecoration: ['responsive', 'hover', 'focus']
+        , textTransform: ['responsive']
+        , userSelect: ['responsive']
+        , verticalAlign: ['responsive']
+        , visibility: ['responsive']
+        , whitespace: ['responsive']
+        , width: ['responsive']
+        , wordBreak: ['responsive']
+        , zIndex: ['responsive']
+        ,
+    }
     , corePlugins: {}
-    , plugins: [ ]
-, }
+    , plugins: []
+    ,
+}
