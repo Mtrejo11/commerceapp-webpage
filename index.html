@@ -18,21 +18,31 @@
 
 <body class="text-white font-sans">
     <nav class="h-16 w-screen flex justify-between items-center object-center gradiente text-white pr-40 fixed z-40">
-        <img src="./resources/Images/comerceApp/logo.png">
+        <a href="./index.html"> <img src="./resources/Images/comerceApp/logo.png"></a>
         <button class="absolute right-0 mr-4 md:hidden cursor-pointer">
             <img src="./resources/Images/comerceApp/menu.png" class="" alt="">
         </button>
         <div>
 
             <ul class="hidden md:flex tex-white font-md">
-                <li class="mx-5 montse"><a href="./index.html">Home</a></li>
-                <li class="mx-5 montse"><a href="">Comercio</a></li>
+                <a href="./index.html">
+                    <div class="md:h-full menu-item">
+                        <div class="nav-element"></div>
+                        <li class="mx-5 montse  py-4">Home</li>
+                    </div>
+                </a>
+                <a href="./comercios.html">
+                    <div class="md:h-full menu-item">
+                        <div class="nav-element"></div>
+                        <li class="mx-5 montse  py-4">Comercios</li>
+                    </div>
+                </a>
 
             </ul>
         </div>
 
     </nav>
-    <section class="h-full md:h-screen gradiente px-10 md:px-0 text-center md:text-left">
+    <section class="h-full md:h-header gradiente px-10 md:px-0 text-center md:text-left">
         <div class=" flex flex-wrap h-full md:h-full mb-0">
             <div class="hidden md:block flex w-full   order-last md:order-first relative md:w-1/2  md:h-full ">
                 <img class="absolute bottom-0" src="./resources/Images/comerceApp/cropped.png" alt="">
@@ -54,7 +64,7 @@
                 </div>
 
             </div>
-            <div class="block h-full md:hidden flex w-full   order-last md:order-first relative md:w-1/2  md:h-full ">
+            <div class="block h-full md:hidden flex w-full  order-last md:order-first relative md:w-1/2  md:h-full ">
                 <img class="md:absolute md:bottom-0" src="./resources/Images/comerceApp/full.png" alt="">
             </div>
         </div>

@@ -18,15 +18,26 @@
 
 <body class="text-white font-sans">
     <nav class="h-16 w-screen flex justify-between items-center object-center gradiente text-white pr-40 fixed z-40">
-        <img src="./resources/Images/comerceApp/logo.png">
+        <a href="./index.html"> <img src="./resources/Images/comerceApp/logo.png"></a>
+
         <button class="absolute right-0 mr-4 md:hidden cursor-pointer">
             <img src="./resources/Images/comerceApp/menu.png" class="" alt="">
         </button>
         <div>
 
             <ul class="hidden md:flex tex-white font-md">
-                <li class="mx-5 montse"><a href="./index.html">Home</a></li>
-                <li class="mx-5 montse"><a href="">Comercio</a></li>
+                <a href="./index.html">
+                    <div class="md:h-full menu-item">
+                        <div class="nav-element"></div>
+                        <li class="mx-5 montse  py-4">Home</li>
+                    </div>
+                </a>
+                <a href="./comercios.html">
+                    <div class="md:h-full menu-item">
+                        <div class="nav-element"></div>
+                        <li class="mx-5 montse  py-4">Comercios</li>
+                    </div>
+                </a>
 
             </ul>
         </div>

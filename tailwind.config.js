@@ -322,6 +322,7 @@ module.exports = {
             , custom: '70vh'
             , custom2: '85vh'
             , grande: '120vh'
+            , header: '110vh'
             ,
         })
         , inset: {
