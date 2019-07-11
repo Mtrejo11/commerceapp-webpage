@@ -38,8 +38,6 @@
 
 /* Label formatting when open */
 .tab input:checked+label {
-    /*@apply text-xl p-5 border-l-2 border-indigo-500 bg-gray-100 text-indigo*/
-    /*.border-l-2*/
 }
 
 /* Icon */
@@ -62,19 +60,12 @@
 .tab input[type=checkbox]+label::before {
     content: "+";
     font-weight: bold;
-    /*.font-bold
- }
- .tab input[type=radio] + label::after {
- content: "\25BE";
- font-weight:bold; /*.font-bold*/
-
 
     color: #0071BB;
 }
 
 /* Icon formatting - open */
 .tab input[type=checkbox]:checked+label::before {
-    /*transform: rotate(315deg);*/
     content: "-";
     color: #0071BB;
 }
@@ -82,5 +73,4 @@
 .tab input[type=radio]:checked+label::after {
     transform: rotateX(180deg);
     background-color: #6574cd;
-    /*.bg-indigo*/
 }

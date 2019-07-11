@@ -27,6 +27,7 @@ module.exports = {
                 , 800: '#2d3748'
                 , 900: '#1a202c'
                 , custom: '#F5F5F5'
+                , title: '#312F2E'
                 ,
             }
             , red: {
@@ -319,7 +320,7 @@ module.exports = {
             , full: '100%'
             , screen: '100vh'
             , custom: '70vh'
-            , custom2: '80vh'
+            , custom2: '85vh'
             , grande: '120vh'
             ,
         })
